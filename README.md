@@ -5,7 +5,7 @@
 **Assignment:** CO2 — Strings and the Java Collection Framework  
 **Total:** 50 marks
 
-This repository contains beginner-readable Java implementations for all seven questions. The code uses straightforward variable declarations, loops, System.out.println() and direct method calls. Required assignment topics such as collections, maps, generics, comparators and queues are retained.
+This repository contains clear and straightforward Java implementations for all seven questions. The code uses straightforward variable declarations, loops, System.out.println() and direct method calls. Required assignment topics such as collections, maps, generics, comparators and queues are retained.
 
 ## Task folders
 
@@ -15,9 +15,9 @@ This repository contains beginner-readable Java implementations for all seven qu
 | [Task02](Task02/README.md) | ArrayList, LinkedList and ArrayDeque | ListStructureBenchmark.java |
 | [Task03](Task03/README.md) | HashSet and equals/hashCode | Attendance.java, BrokenAttendance.java |
 | [Task04](Task04/README.md) | HashMap, TreeMap and LinkedHashMap | PharmacyInventory.java |
-| [Task05](Task05/README.md) | Generics and Comparator ranking | LeaderboardDemoBeginner.java |
-| [Task06](Task06/README.md) | Queue and PriorityQueue | TriageBeginner.java |
-| [Task07](Task07/README.md) | Diagnose, redesign and validate | RedesignValidationBeginner.java |
+| [Task05](Task05/README.md) | Generics and Comparator ranking | LeaderboardDemo.java |
+| [Task06](Task06/README.md) | Queue and PriorityQueue | Triage.java |
+| [Task07](Task07/README.md) | Diagnose, redesign and validate | RedesignValidation.java |
 
 Each task folder has its own README with the aim, simple explanation, methods or concepts used, compile/run commands, expected result and complexity notes.
 
@@ -34,7 +34,7 @@ For Task03, run BrokenAttendance and Attendance separately.
 
 ## Consolidated report
 
-[Open the assignment report](report/ASSIGNMENT_REPORT_BEGINNER.md) for explanations and conclusions for Q1–Q7.
+[Open the assignment report](report/ASSIGNMENT_REPORT.md) for explanations and conclusions for Q1–Q7.
 
 ## Before final submission
 
