@@ -1,6 +1,3 @@
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 class Patient {
     String name;
     int severity;
@@ -20,7 +17,7 @@ class Patient {
 public class task6 {
     long counter = 0;
 
-    PriorityQueue<Patient> queue = new PriorityQueue<Patient>(new Comparator<Patient>() {
+    java.util.PriorityQueue<Patient> queue = new java.util.PriorityQueue<Patient>(new java.util.Comparator<Patient>() {
         public int compare(Patient first, Patient second) {
             if (first.severity != second.severity) {
                 return Integer.compare(first.severity, second.severity);
@@ -43,7 +40,7 @@ public class task6 {
     }
 
     public static void main(String[] args) {
-        Triage er = new Triage();
+        Triage er = new task6();
 
         er.admit("Ravi", 3);
         er.admit("Meena", 1);
