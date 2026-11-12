@@ -1,6 +1,6 @@
 # CSA0909 — Programming in Java, Assignment 2
 
-**Student:** Rishi Nathan  
+**Student:** Rishinathan L  
 **Register number:** 1911260190  
 **Assignment:** CO2 — Strings and the Java Collection Framework  
 **Total:** 50 marks
