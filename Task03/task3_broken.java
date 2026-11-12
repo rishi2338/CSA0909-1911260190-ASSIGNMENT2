@@ -1,6 +1,3 @@
-import java.util.HashSet;
-import java.util.Set;
-
 class OldStudent {
     String regNo;
 
@@ -19,7 +16,7 @@ class OldStudent {
 
 public class task3_broken {
     public static void main(String[] args) {
-        Set<OldStudent> scans = new HashSet<OldStudent>();
+        java.util.Set<OldStudent> scans = new Hashjava.util.Set<OldStudent>();
         scans.add(new OldStudent("192311001"));
         scans.add(new OldStudent("192311001"));
         scans.add(new OldStudent("192311002"));
