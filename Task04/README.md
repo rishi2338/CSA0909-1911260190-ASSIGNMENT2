@@ -24,7 +24,7 @@ java PharmacyInventory
 ~~~
 
 ## Result and decision
-See ../results/Task04_output_revised.txt. Use TreeMap for code-sorted reports and LinkedHashMap for insertion-order reports. Hashtable is a legacy synchronized map and is not the default choice for new code.
+Use TreeMap for code-sorted reports and LinkedHashMap for insertion-order reports. Hashtable is a legacy synchronized map and is not the default choice for new code.
 
 ## Big-O summary
 | Operation | HashMap | TreeMap | LinkedHashMap |
