@@ -1,0 +1,4 @@
+Unique students: 2
+TreeSet students: [192311001 Arun, 192311002 Divya]
+Set size with equals() only: 3
+The result demonstrates why equals() and hashCode() must agree.
