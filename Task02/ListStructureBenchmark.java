@@ -40,7 +40,12 @@ public class ListStructureBenchmark {
             long linkedFront = (System.nanoTime() - start) / repeats;
 
             start = System.nanoTime();
-            for (int i = 0; i < repeats; i++) { deque.addFirst(i); deque.removeLast(); }
+            for (int i = 0; i < repeats; i++) {
+                deque.addFirst(i);
+                deque.removeFirst();
+                deque.addLast(i);
+                deque.removeFirst();
+            }
             long dequeEnds = (System.nanoTime() - start) / repeats;
 
             start = System.nanoTime();
