@@ -32,13 +32,10 @@ java StringConstructionBenchmark
 
 For Task03, run BrokenAttendance and Attendance separately.
 
-## Results and report
+## Consolidated report
 
-- results/ contains captured console output from a validation run.
-- [Consolidated assignment report](report/ASSIGNMENT_REPORT_BEGINNER.md) contains explanations and conclusions for Q1–Q7.
-
-Benchmark timings depend on the computer, JVM, warm-up and background activity. They are sample measurements, not universal performance guarantees. Repeat the tests on your own laptop and keep your own raw measurements.
+[Open the assignment report](report/ASSIGNMENT_REPORT_BEGINNER.md) for explanations and conclusions for Q1–Q7.
 
 ## Before final submission
 
-The assignment asks each student to execute every task individually and submit output screenshots and raw experimental data. The text files in results/ are console captures; **personal terminal screenshots have not been added**. Run each program on your computer, capture the output, and add those screenshots to the matching task folder. Review the report so you can explain the code and defend the results in the viva.
+Run every program on your own computer, capture your terminal output screenshots, and add them to the matching task folders if screenshots are required for submission. Repeat the benchmark tests on your laptop because timings vary by JVM and computer. Review the report so you can explain the code and results in the viva.
