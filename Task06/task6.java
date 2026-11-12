@@ -40,7 +40,7 @@ public class task6 {
     }
 
     public static void main(String[] args) {
-        Triage er = new task6();
+        task6 er = new task6();
 
         er.admit("Ravi", 3);
         er.admit("Meena", 1);
