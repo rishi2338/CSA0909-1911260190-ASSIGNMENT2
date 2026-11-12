@@ -1,8 +1,3 @@
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.Comparator;
-
 class Student {
     String regNo;
     String name;
@@ -33,7 +28,7 @@ class Student {
 
 public class task3 {
     public static void main(String[] args) {
-        Set<Student> present = new HashSet<Student>();
+        java.util.Set<Student> present = new Hashjava.util.Set<Student>();
 
         present.add(new Student("192311001", "Arun"));
         present.add(new Student("192311002", "Divya"));
@@ -41,7 +36,7 @@ public class task3 {
 
         System.out.println("Unique students: " + present.size());
 
-        Set<Student> sortedStudents = new TreeSet<Student>(new Comparator<Student>() {
+        java.util.Set<Student> sortedStudents = new Treejava.util.Set<Student>(new java.util.Comparator<Student>() {
             public int compare(Student first, Student second) {
                 return first.regNo.compareTo(second.regNo);
             }
