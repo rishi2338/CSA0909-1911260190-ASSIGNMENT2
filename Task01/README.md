@@ -24,7 +24,7 @@ java StringConstructionBenchmark
 ~~~
 
 ## Result and decision
-See ../results/Task01_output_revised.txt. Use StringBuilder for each ticket. For a shared multithreaded log, use a thread-safe logger or synchronize access.
+Use StringBuilder for each ticket. For a shared multithreaded log, use a thread-safe logger or synchronize access.
 
 ## Complexity
 Repeated + can approach O(n²) copied characters for n fields. StringBuilder append is approximately O(L) for L output characters.
