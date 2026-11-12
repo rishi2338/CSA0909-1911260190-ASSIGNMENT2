@@ -1,6 +1,3 @@
-import java.util.Comparator;
-import java.util.PriorityQueue;
-
 class WaitingPatient {
     int severity;
     long arrival;
@@ -17,7 +14,7 @@ public class task6_benchmark {
         System.out.println("Patients,Add ns per patient,Poll ns per patient");
 
         for (int size : sizes) {
-            PriorityQueue<WaitingPatient> queue = new PriorityQueue<WaitingPatient>(new Comparator<WaitingPatient>() {
+            java.util.PriorityQueue<WaitingPatient> queue = new java.util.PriorityQueue<WaitingPatient>(new java.util.Comparator<WaitingPatient>() {
                 public int compare(WaitingPatient first, WaitingPatient second) {
                     if (first.severity != second.severity) {
                         return Integer.compare(first.severity, second.severity);
