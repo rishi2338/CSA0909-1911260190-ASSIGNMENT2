@@ -1,0 +1,9 @@
+Size,ArrayList end ns,LinkedList end ns,ArrayList front ns,LinkedList front ns,ArrayDeque ends ns
+Size,ArrayList middle ns,LinkedList middle ns,ArrayList get ns,LinkedList get ns,ArrayList iterate ns,LinkedList iterate ns
+1000,110,153,908,281,216
+1000,600,13018,241,990,250106,253021
+10000,46,43,4319,344,318
+10000,2383,33667,284,8831,742378,758032
+50000,59,54,7068,291,518
+50000,3713,74277,137,30157,3325711,4622485
+ArrayList is suitable for indexed access. ArrayDeque is suitable for an Up Next queue at both ends.
