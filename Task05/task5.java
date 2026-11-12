@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 class Team {
     String name;
     int points;
@@ -20,10 +15,10 @@ class Team {
 }
 
 class Leaderboard<T> {
-    List<T> items = new ArrayList<T>();
-    Comparator<? super T> order;
+    java.util.List<T> items = new Arrayjava.util.List<T>();
+    java.util.Comparator<? super T> order;
 
-    Leaderboard(Comparator<? super T> order) {
+    Leaderboard(java.util.Comparator<? super T> order) {
         this.order = order;
     }
 
@@ -31,16 +26,16 @@ class Leaderboard<T> {
         items.add(item);
     }
 
-    List<T> ranking() {
-        List<T> sortedItems = new ArrayList<T>(items);
-        Collections.sort(sortedItems, order);
+    java.util.List<T> ranking() {
+        java.util.List<T> sortedItems = new Arrayjava.util.List<T>(items);
+        java.util.Collections.sort(sortedItems, order);
         return sortedItems;
     }
 }
 
 public class task5 {
     public static void main(String[] args) {
-        Comparator<Team> byRank = new Comparator<Team>() {
+        java.util.Comparator<Team> byRank = new java.util.Comparator<Team>() {
             public int compare(Team first, Team second) {
                 if (first.points != second.points) {
                     return Integer.compare(second.points, first.points);
