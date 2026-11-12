@@ -4,7 +4,7 @@
 Rank sports teams by points, goal difference and team name.
 
 ## Java file
-LeaderboardDemoBeginner.java
+LeaderboardDemo.java
 
 ## Simple explanation
 The Leaderboard<T> class stores different object types using a generic type T. A Comparator tells Java how to compare two teams: points high-to-low, goal difference high-to-low, and name A-to-Z.
@@ -14,7 +14,7 @@ Generics (<T>), Comparator, compare(), Collections.sort(), ArrayList, compareTo(
 
 ## Compile and run
 ~~~bash
-javac LeaderboardDemoBeginner.java
+javac LeaderboardDemo.java
 java LeaderboardDemoBeginner
 ~~~
 
