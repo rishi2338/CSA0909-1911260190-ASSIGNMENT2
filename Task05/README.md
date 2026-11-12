@@ -15,7 +15,7 @@ Generics (<T>), Comparator, compare(), Collections.sort(), ArrayList, compareTo(
 ## Compile and run
 ~~~bash
 javac LeaderboardDemo.java
-java LeaderboardDemoBeginner
+java LeaderboardDemo
 ~~~
 
 ## Expected output
