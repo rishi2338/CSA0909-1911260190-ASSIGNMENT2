@@ -36,7 +36,7 @@ public class task3 {
 
         System.out.println("Unique students: " + present.size());
 
-        java.util.Set<Student> sortedStudents = new Treejava.util.Set<Student>(new java.util.Comparator<Student>() {
+        java.util.Set<Student> sortedStudents = new java.util.TreeSet<Student>(new java.util.Comparator<Student>() {
             public int compare(Student first, Student second) {
                 return first.regNo.compareTo(second.regNo);
             }
