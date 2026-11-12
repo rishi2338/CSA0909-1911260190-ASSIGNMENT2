@@ -4,7 +4,7 @@
 Store medicine stock by code and produce code-sorted and insertion-order reports.
 
 ## Java file
-PharmacyInventory.java
+task4.java
 
 ## Simple explanation
 - HashMap provides quick key lookup but no promised iteration order.
@@ -19,7 +19,7 @@ The program tests 100, 1,000 and 10,000 medicines and performs 100,000 lookups f
 
 ## Compile and run
 ~~~bash
-javac PharmacyInventory.java
+javac task4.java
 java PharmacyInventory
 ~~~
 
