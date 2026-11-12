@@ -2,9 +2,9 @@ public class task4 {
     static int total;
 
     public static void main(String[] args) {
-        java.util.Map<String, Integer> hashMap = new Hashjava.util.Map<String, Integer>();
-        java.util.Map<String, Integer> treeMap = new Treejava.util.Map<String, Integer>();
-        java.util.Map<String, Integer> linkedMap = new LinkedHashjava.util.Map<String, Integer>();
+        java.util.Map<String, Integer> hashMap = new java.util.HashMap<String, Integer>();
+        java.util.Map<String, Integer> treeMap = new java.util.TreeMap<String, Integer>();
+        java.util.Map<String, Integer> linkedMap = new java.util.LinkedHashMap<String, Integer>();
 
         String[] codes = {"MED103", "MED101", "MED104", "MED102"};
         int[] stocks = {40, 12, 8, 25};
@@ -26,9 +26,9 @@ public class task4 {
         System.out.println("\nMap size,HashMap lookup ns,TreeMap lookup ns,LinkedHashMap lookup ns,TreeMap report ns,LinkedHashMap report ns");
 
         for (int size : sizes) {
-            java.util.Map<String, Integer> h = new Hashjava.util.Map<String, Integer>();
-            java.util.Map<String, Integer> t = new Treejava.util.Map<String, Integer>();
-            java.util.Map<String, Integer> l = new LinkedHashjava.util.Map<String, Integer>();
+            java.util.Map<String, Integer> h = new java.util.HashMap<String, Integer>();
+            java.util.Map<String, Integer> t = new java.util.TreeMap<String, Integer>();
+            java.util.Map<String, Integer> l = new java.util.LinkedHashMap<String, Integer>();
 
             for (int i = 0; i < size; i++) {
                 String code = "MED" + i;
