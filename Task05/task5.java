@@ -1,60 +1,59 @@
+package assignment2;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 class Team {
     final String name;
     final int points;
-    final int goalDiff;
+    final int goalDifference;
 
-    Team(String name, int points, int goalDiff) {
+    Team(String name, int points, int goalDifference) {
         this.name = name;
         this.points = points;
-        this.goalDiff = goalDiff;
+        this.goalDifference = goalDifference;
     }
 
     @Override
     public String toString() {
-        return name + "(" + points + "," + goalDiff + ")";
+        return name + "(" + points + "," + goalDifference + ")";
     }
 }
 
 class Leaderboard<T> {
-    private final java.util.List<T> items = new java.util.ArrayList<T>();
-    private final java.util.Comparator<? super T> order;
+    private final List<T> items;
+    private final Comparator<? super T> order;
 
-    Leaderboard(java.util.Comparator<? super T> order) {
+    Leaderboard(List<T> items, Comparator<? super T> order) {
+        this.items = items;
         this.order = order;
     }
 
-    void add(T item) {
-        items.add(item);
-    }
-
-    java.util.List<T> ranking() {
-        java.util.List<T> sortedItems = new java.util.ArrayList<T>(items);
-        java.util.Collections.sort(sortedItems, order);
+    List<T> ranking() {
+        List<T> sortedItems = new ArrayList<>(items);
+        Collections.sort(sortedItems, order);
         return sortedItems;
     }
 }
 
 public class task5 {
     public static void main(String[] args) {
-        java.util.Comparator<Team> byRank = new java.util.Comparator<Team>() {
-            @Override
-            public int compare(Team first, Team second) {
-                if (first.points != second.points) {
-                    return Integer.compare(second.points, first.points);
-                }
-                if (first.goalDiff != second.goalDiff) {
-                    return Integer.compare(second.goalDiff, first.goalDiff);
-                }
-                return first.name.compareTo(second.name);
-            }
-        };
+        List<Team> teams = new ArrayList<>();
 
-        Leaderboard<Team> board = new Leaderboard<Team>(byRank);
+        teams.add(new Team("Eagles", 9, 6));
+        teams.add(new Team("Bisons", 9, 4));
+        teams.add(new Team("Panthers", 9, 4));
+        teams.add(new Team("Cobras", 6, 1));
 
-        board.add(new Team("Panthers", 9, 4));
-        board.add(new Team("Eagles", 9, 6));
-        board.add(new Team("Cobras", 6, 1));
-        board.add(new Team("Bisons", 9, 4));
+        Comparator<Team> teamOrder = Comparator
+                .comparingInt((Team t) -> t.points).reversed()
+                .thenComparing(Comparator.comparingInt(
+                        (Team t) -> t.goalDifference).reversed())
+                .thenComparing(t -> t.name);
+
+        Leaderboard<Team> board = new Leaderboard<>(teams, teamOrder);
 
         System.out.println(board.ranking());
     }
