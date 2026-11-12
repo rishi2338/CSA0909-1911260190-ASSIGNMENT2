@@ -1,9 +1,0 @@
-Size,ArrayList end ns,LinkedList end ns,ArrayList front ns,LinkedList front ns,ArrayDeque ends ns
-Size,ArrayList middle ns,LinkedList middle ns,ArrayList get ns,LinkedList get ns,ArrayList iterate ns,LinkedList iterate ns
-1000,56,83,1195,336,230
-1000,598,11539,267,1566,271840,248795
-10000,47,44,5422,252,1277
-10000,1747,18394,193,16351,661938,784372
-50000,43,41,9676,232,259
-50000,4702,78955,130,37155,3915109,3663710
-ArrayList is suitable for indexed access. ArrayDeque is suitable for an Up Next queue at both ends.
