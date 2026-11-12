@@ -1,7 +1,3 @@
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.LinkedList;
-
 public class task2 {
     static long total;
 
@@ -13,9 +9,9 @@ public class task2 {
         System.out.println("Size,ArrayList middle ns,LinkedList middle ns,ArrayList get ns,LinkedList get ns,ArrayList iterate ns,LinkedList iterate ns");
 
         for (int n : sizes) {
-            ArrayList<Integer> arrayList = new ArrayList<Integer>();
-            LinkedList<Integer> linkedList = new LinkedList<Integer>();
-            ArrayDeque<Integer> deque = new ArrayDeque<Integer>();
+            java.util.ArrayList<Integer> arrayList = new java.util.ArrayList<Integer>();
+            java.util.LinkedList<Integer> linkedList = new java.util.LinkedList<Integer>();
+            java.util.ArrayDeque<Integer> deque = new java.util.ArrayDeque<Integer>();
 
             for (int i = 0; i < n; i++) {
                 arrayList.add(i);
