@@ -4,7 +4,7 @@
 Compare list structures for a music playlist and an Up Next queue.
 
 ## Java file
-ListStructureBenchmark.java
+task2.java
 
 ## Simple explanation
 - ArrayList stores elements in an array. get(index) is fast; front and middle insertions shift elements.
@@ -19,7 +19,7 @@ add(), addFirst(), addLast(), remove(), removeFirst(), removeLast(), get(), enha
 
 ## Compile and run
 ~~~bash
-javac ListStructureBenchmark.java
+javac task2.java
 java ListStructureBenchmark
 ~~~
 
