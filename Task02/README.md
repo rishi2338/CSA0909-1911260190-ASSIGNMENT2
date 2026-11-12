@@ -12,10 +12,10 @@ ListStructureBenchmark.java
 - ArrayDeque is useful when items are added and removed at both ends. It has no indexed access.
 
 ## Methods used
-add(), addFirst(), remove(), removeFirst(), removeLast(), get(), enhanced for loop, System.nanoTime().
+add(), addFirst(), addLast(), remove(), removeFirst(), removeLast(), get(), enhanced for loop, System.nanoTime().
 
 ## Test cases
-1,000, 10,000 and 50,000 elements. The program measures end insertion, front and middle operations, indexed access, iteration and ArrayDeque end operations.
+1,000, 10,000 and 50,000 elements. The program measures end insertion, front and middle operations, indexed access, iteration and ArrayDeque operations at both ends with removal from the front.
 
 ## Compile and run
 ~~~bash
@@ -24,7 +24,7 @@ java ListStructureBenchmark
 ~~~
 
 ## Result and decision
-See ../results/Task02_output_revised.txt. ArrayList suits playlists with frequent index access. ArrayDeque suits the separate Up Next queue.
+See ../results/Task02_output_final.txt. ArrayList suits playlists with frequent index access. ArrayDeque suits the separate Up Next queue.
 
 ## Big-O summary
 | Operation | ArrayList | LinkedList | ArrayDeque |
