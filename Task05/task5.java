@@ -15,7 +15,7 @@ class Team {
 }
 
 class Leaderboard<T> {
-    java.util.List<T> items = new Arrayjava.util.List<T>();
+    java.util.List<T> items = new java.util.ArrayList<T>();
     java.util.Comparator<? super T> order;
 
     Leaderboard(java.util.Comparator<? super T> order) {
@@ -27,7 +27,7 @@ class Leaderboard<T> {
     }
 
     java.util.List<T> ranking() {
-        java.util.List<T> sortedItems = new Arrayjava.util.List<T>(items);
+        java.util.List<T> sortedItems = new java.util.ArrayList<T>(items);
         java.util.Collections.sort(sortedItems, order);
         return sortedItems;
     }
