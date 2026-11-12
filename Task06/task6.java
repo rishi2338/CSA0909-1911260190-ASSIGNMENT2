@@ -1,7 +1,10 @@
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 class Patient {
-    String name;
-    int severity;
-    long arrival;
+    final String name;
+    final int severity;
+    final long arrival;
 
     Patient(String name, int severity, long arrival) {
         this.name = name;
@@ -9,30 +12,22 @@ class Patient {
         this.arrival = arrival;
     }
 
+    @Override
     public String toString() {
         return name + "(S" + severity + ")";
     }
 }
 
 public class task6 {
-    long counter = 0;
+    private long counter = 0;
 
-    java.util.PriorityQueue<Patient> queue = new java.util.PriorityQueue<Patient>(new java.util.Comparator<Patient>() {
-        public int compare(Patient first, Patient second) {
-            if (first.severity != second.severity) {
-                return Integer.compare(first.severity, second.severity);
-            }
-            return Long.compare(first.arrival, second.arrival);
-        }
-    });
+    private PriorityQueue<Patient> queue = new PriorityQueue<>(
+        Comparator.comparingInt((Patient p) -> p.severity)
+                  .thenComparingLong(p -> p.arrival)
+    );
 
     void admit(String name, int severity) {
-        if (severity < 1 || severity > 5) {
-            System.out.println("Severity must be from 1 to 5");
-            return;
-        }
-        queue.add(new Patient(name, severity, counter));
-        counter++;
+        queue.add(new Patient(name, severity, counter++));
     }
 
     Patient next() {
@@ -50,10 +45,10 @@ public class task6 {
         er.admit("Lata", 2);
 
         StringBuilder order = new StringBuilder();
-        Patient patient;
+        Patient p;
 
-        while ((patient = er.next()) != null) {
-            order.append(patient).append(" ");
+        while ((p = er.next()) != null) {
+            order.append(p).append(' ');
         }
 
         System.out.println(order.toString().trim());
