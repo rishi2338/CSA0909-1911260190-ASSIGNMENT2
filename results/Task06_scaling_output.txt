@@ -1,0 +1,4 @@
+Patients,Add ns per patient,Poll ns per patient
+1000,742,928
+10000,96,379
+50000,102,235
