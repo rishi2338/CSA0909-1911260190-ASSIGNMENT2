@@ -24,7 +24,7 @@ java ListStructureBenchmark
 ~~~
 
 ## Result and decision
-See ../results/Task02_output_final.txt. ArrayList suits playlists with frequent index access. ArrayDeque suits the separate Up Next queue.
+ArrayList suits playlists with frequent index access. ArrayDeque suits the separate Up Next queue.
 
 ## Big-O summary
 | Operation | ArrayList | LinkedList | ArrayDeque |
