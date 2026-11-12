@@ -11,13 +11,13 @@ This repository contains clear and straightforward Java implementations for all 
 
 | Folder | Topic | Java program |
 |---|---|---|
-| [Task01](Task01/README.md) | String, StringBuilder and StringBuffer | StringConstructionBenchmark.java |
-| [Task02](Task02/README.md) | ArrayList, LinkedList and ArrayDeque | ListStructureBenchmark.java |
-| [Task03](Task03/README.md) | HashSet and equals/hashCode | Attendance.java, BrokenAttendance.java |
-| [Task04](Task04/README.md) | HashMap, TreeMap and LinkedHashMap | PharmacyInventory.java |
-| [Task05](Task05/README.md) | Generics and Comparator ranking | LeaderboardDemo.java |
-| [Task06](Task06/README.md) | Queue and PriorityQueue | Triage.java |
-| [Task07](Task07/README.md) | Diagnose, redesign and validate | RedesignValidation.java |
+| [Task01](Task01/README.md) | String, StringBuilder and StringBuffer | task1.java |
+| [Task02](Task02/README.md) | ArrayList, LinkedList and ArrayDeque | task2.java |
+| [Task03](Task03/README.md) | HashSet and equals/hashCode | task3.java, Brokentask3.java |
+| [Task04](Task04/README.md) | HashMap, TreeMap and LinkedHashMap | task4.java |
+| [Task05](Task05/README.md) | Generics and Comparator ranking | task5.java |
+| [Task06](Task06/README.md) | Queue and PriorityQueue | task6.java |
+| [Task07](Task07/README.md) | Diagnose, redesign and validate | task7.java |
 
 Each task folder has its own README with the aim, simple explanation, methods or concepts used, compile/run commands, expected result and complexity notes.
 
@@ -26,7 +26,7 @@ Each task folder has its own README with the aim, simple explanation, methods or
 The programs use standard Java features available in Java 8 or later. Open a terminal inside the required task folder and run the command shown in that task's README. For example:
 
 ~~~bash
-javac StringConstructionBenchmark.java
+javac task1.java
 java StringConstructionBenchmark
 ~~~
 
