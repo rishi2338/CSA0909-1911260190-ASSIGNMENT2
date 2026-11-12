@@ -1,0 +1,4 @@
+size,array_add_end,linked_add_end,array_front_add_remove,linked_front_add_remove,deque_end_ops,array_middle_add_remove,linked_middle_add_remove,array_get,linked_get,array_iter,linked_iter
+1000,77,80,824,320,246,748,7865,75,946,301103,341545
+10000,58,70,2852,252,217,1898,16832,67,8663,952074,782469
+50000,65,53,5137,270,235,2405,79193,53,32281,3005528,3360934
