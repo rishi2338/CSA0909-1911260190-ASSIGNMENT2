@@ -16,7 +16,7 @@ class OldStudent {
 
 public class task3_broken {
     public static void main(String[] args) {
-        java.util.Set<OldStudent> scans = new Hashjava.util.Set<OldStudent>();
+        java.util.Set<OldStudent> scans = new java.util.HashSet<OldStudent>();
         scans.add(new OldStudent("192311001"));
         scans.add(new OldStudent("192311001"));
         scans.add(new OldStudent("192311002"));
