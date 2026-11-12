@@ -26,4 +26,4 @@ Meena(S1) Kumar(S1) Lata(S2) Ravi(S3) John(S3) Asha(S5)
 ~~~
 
 ## Complexity and fairness
-Adding and removing takes O(log n); checking the next patient takes O(1). The queue uses O(n) space. The scaling program tests 1,000, 10,000 and 50,000 patients. A minor patient may wait indefinitely if critical cases keep arriving. Priority ageing can raise priority after a waiting-time limit. The example explains this rule but does not implement time-based ageing. A real hospital system needs clinical review, persistence and concurrency controls.
+Adding and removing takes O(log n); checking the next patient takes O(1). The queue uses O(n) space. The scaling program tests 1,000, 10,000 and 50,000 patients; its captured output is in ../results/Task06_scaling_output.txt. A minor patient may wait indefinitely if critical cases keep arriving. Priority ageing can raise priority after a waiting-time limit. The example explains this rule but does not implement time-based ageing. A real hospital system needs clinical review, persistence and concurrency controls.
