@@ -1,7 +1,7 @@
 class Team {
-    String name;
-    int points;
-    int goalDiff;
+    final String name;
+    final int points;
+    final int goalDiff;
 
     Team(String name, int points, int goalDiff) {
         this.name = name;
@@ -9,14 +9,15 @@ class Team {
         this.goalDiff = goalDiff;
     }
 
+    @Override
     public String toString() {
         return name + "(" + points + "," + goalDiff + ")";
     }
 }
 
 class Leaderboard<T> {
-    java.util.List<T> items = new java.util.ArrayList<T>();
-    java.util.Comparator<? super T> order;
+    private final java.util.List<T> items = new java.util.ArrayList<T>();
+    private final java.util.Comparator<? super T> order;
 
     Leaderboard(java.util.Comparator<? super T> order) {
         this.order = order;
@@ -36,6 +37,7 @@ class Leaderboard<T> {
 public class task5 {
     public static void main(String[] args) {
         java.util.Comparator<Team> byRank = new java.util.Comparator<Team>() {
+            @Override
             public int compare(Team first, Team second) {
                 if (first.points != second.points) {
                     return Integer.compare(second.points, first.points);
@@ -48,6 +50,7 @@ public class task5 {
         };
 
         Leaderboard<Team> board = new Leaderboard<Team>(byRank);
+
         board.add(new Team("Panthers", 9, 4));
         board.add(new Team("Eagles", 9, 6));
         board.add(new Team("Cobras", 6, 1));
