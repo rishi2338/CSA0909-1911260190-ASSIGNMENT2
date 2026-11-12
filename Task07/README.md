@@ -22,7 +22,7 @@ java RedesignValidationBeginner
 ~~~
 
 ## Validation
-The program tests 10, 50, 100 and 500 fields and averages 1,000 ticket builds per method. See ../results/Task07_output_final.txt. Repeat on your own computer under the same conditions.
+The program tests 10, 50, 100 and 500 fields and averages 1,000 ticket builds per method. Repeat on your own computer under the same conditions.
 
 ## Trade-off
 StringBuilder uses a mutable buffer but avoids repeatedly copying the growing ticket. String concatenation is still acceptable for a few simple joins.
