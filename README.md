@@ -5,7 +5,7 @@
 **Assignment:** CO2 — Strings and the Java Collection Framework  
 **Total:** 50 marks
 
-This repository contains beginner-readable Java implementations for all seven questions in the assignment. The code uses straightforward variable declarations, loops, System.out.println() and direct method calls. Required assignment concepts such as collections, maps, generics, comparators and queues are retained.
+This repository contains beginner-readable Java implementations for all seven questions. The code uses straightforward variable declarations, loops, System.out.println() and direct method calls. Required assignment topics such as collections, maps, generics, comparators and queues are retained.
 
 ## Task folders
 
@@ -15,27 +15,27 @@ This repository contains beginner-readable Java implementations for all seven qu
 | [Task02](Task02/README.md) | ArrayList, LinkedList and ArrayDeque | ListStructureBenchmark.java |
 | [Task03](Task03/README.md) | HashSet and equals/hashCode | Attendance.java, BrokenAttendance.java |
 | [Task04](Task04/README.md) | HashMap, TreeMap and LinkedHashMap | PharmacyInventory.java |
-| [Task05](Task05/README.md) | Generics and Comparator ranking | LeaderboardDemo.java |
-| [Task06](Task06/README.md) | Queue and PriorityQueue | Triage.java |
-| [Task07](Task07/README.md) | Diagnose, redesign and validate | RedesignValidation.java |
+| [Task05](Task05/README.md) | Generics and Comparator ranking | LeaderboardDemoBeginner.java |
+| [Task06](Task06/README.md) | Queue and PriorityQueue | TriageBeginner.java |
+| [Task07](Task07/README.md) | Diagnose, redesign and validate | RedesignValidationBeginner.java |
 
-Each task folder has its own README with the aim, explanation, methods or concepts used, compile/run commands, result and complexity notes.
+Each task folder has its own README with the aim, simple explanation, methods or concepts used, compile/run commands, expected result and complexity notes.
 
 ## Java version and running programs
 
-The programs use standard Java features available in Java 8 or later. Open a terminal inside the required task folder and run:
+The programs use standard Java features available in Java 8 or later. Open a terminal inside the required task folder and run the command shown in that task's README. For example:
 
 ~~~bash
-javac *.java
-java ClassName
+javac StringConstructionBenchmark.java
+java StringConstructionBenchmark
 ~~~
 
-Use the class name shown in that task's README. For Task03, run BrokenAttendance and Attendance separately.
+For Task03, run BrokenAttendance and Attendance separately.
 
 ## Results and report
 
 - results/ contains captured console output from a validation run.
-- report/ASSIGNMENT_REPORT.md contains the combined explanation and conclusions for Q1–Q7.
+- [Consolidated assignment report](report/ASSIGNMENT_REPORT_BEGINNER.md) contains explanations and conclusions for Q1–Q7.
 
 Benchmark timings depend on the computer, JVM, warm-up and background activity. They are sample measurements, not universal performance guarantees. Repeat the tests on your own laptop and keep your own raw measurements.
 
