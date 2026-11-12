@@ -34,6 +34,3 @@ java task1
 
 [Open the assignment report](report/ASSIGNMENT_REPORT.md) for explanations and conclusions for Q1–Q7.
 
-## Before final submission
-
-Run every program on your own computer and capture your terminal output screenshots if required for submission. Repeat benchmark tests on your laptop because timings vary by JVM and computer. Review the report so you can explain the code and results in the viva.
