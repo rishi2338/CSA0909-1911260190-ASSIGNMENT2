@@ -16,8 +16,8 @@ PriorityQueue, Comparator, add(), poll(), StringBuilder.append(), and toString()
 ## Compile and run
 ~~~bash
 javac *.java
-java TriageBeginner
-java TriageScalingBenchmarkBeginner
+java Triage
+java TriageScalingBenchmark
 ~~~
 
 ## Expected triage output
