@@ -4,8 +4,8 @@
 Prevent the same student from being counted more than once at different event gates.
 
 ## Java files
-- Attendance.java — corrected Student class and HashSet solution.
-- BrokenAttendance.java — intentionally incorrect example that overrides equals() but not hashCode().
+- task3.java — corrected Student class and HashSet solution.
+- Brokentask3.java — intentionally incorrect example that overrides equals() but not hashCode().
 
 ## Simple explanation
 HashSet uses hashCode() to find a bucket and equals() to check whether an equal item is present. Equal objects must return the same hash code. The corrected program uses the registration number in both methods.
