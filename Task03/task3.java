@@ -28,7 +28,7 @@ class Student {
 
 public class task3 {
     public static void main(String[] args) {
-        java.util.Set<Student> present = new Hashjava.util.Set<Student>();
+        java.util.Set<Student> present = new java.util.HashSet<Student>();
 
         present.add(new Student("192311001", "Arun"));
         present.add(new Student("192311002", "Divya"));
