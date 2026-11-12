@@ -7,10 +7,10 @@ Rank sports teams by points, goal difference and team name.
 LeaderboardDemoBeginner.java
 
 ## Simple explanation
-Leaderboard<T> stores different object types using a generic type T. A Comparator tells Java how to compare two teams: points high-to-low, goal difference high-to-low, and name A-to-Z.
+The Leaderboard<T> class stores different object types using a generic type T. A Comparator tells Java how to compare two teams: points high-to-low, goal difference high-to-low, and name A-to-Z.
 
 ## Methods and concepts
-Generics (<T>), Comparator, compare(), Collections.sort(), ArrayList, compareTo().
+Generics (<T>), Comparator, compare(), Collections.sort(), ArrayList, compareTo(), and the wildcard Comparator<? super T>.
 
 ## Compile and run
 ~~~bash
@@ -25,5 +25,5 @@ java LeaderboardDemoBeginner
 
 Bisons is above Panthers because points and goal difference are tied, so alphabetical order decides.
 
-## Complexity
-Sorting n teams takes O(n log n). The copied list uses O(n) extra space. Comparator is reusable when different ranking orders are needed.
+## Complexity and design decision
+Sorting n teams takes O(n log n). The copied list uses O(n) extra space. Comparator is reusable when different ranking orders are needed. Comparable<Team> would define one natural ordering inside Team; a separate Comparator is better when the same team data needs multiple ranking rules. A parameter such as List<? extends T> is useful when a method should accept a list containing T objects or objects of a subclass of T.
