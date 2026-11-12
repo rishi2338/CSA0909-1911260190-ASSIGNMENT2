@@ -4,8 +4,8 @@
 Treat the most critical patient first. For equal severity, treat the earliest arrival first.
 
 ## Java files
-- TriageBeginner.java — priority queue and arrival-order tie-break.
-- TriageScalingBenchmarkBeginner.java — add/remove timing for increasing queue sizes.
+- Triage.java — priority queue and arrival-order tie-break.
+- TriageScalingBenchmark.java — add/remove timing for increasing queue sizes.
 
 ## Simple explanation
 A normal FIFO queue only follows arrival order. PriorityQueue uses a Comparator to place the smallest severity number first. An arrival counter keeps equal-severity patients in arrival order.
