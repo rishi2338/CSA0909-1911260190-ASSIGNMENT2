@@ -4,7 +4,7 @@
 Build railway e-tickets and compare three ways of joining text.
 
 ## Java file
-StringConstructionBenchmark.java
+task1.java
 
 ## Simple explanation
 - String cannot be changed after it is created. Repeated + joins can create temporary String objects.
@@ -19,7 +19,7 @@ append(), length(), and System.nanoTime() for timing.
 
 ## Compile and run
 ~~~bash
-javac StringConstructionBenchmark.java
+javac task1.java
 java StringConstructionBenchmark
 ~~~
 
