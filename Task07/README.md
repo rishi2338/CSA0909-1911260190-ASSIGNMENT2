@@ -18,7 +18,7 @@ As the number of fields increases, StringBuilder should usually need less time a
 ## Compile and run
 ~~~bash
 javac RedesignValidation.java
-java RedesignValidationBeginner
+java RedesignValidation
 ~~~
 
 ## Validation
