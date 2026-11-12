@@ -1,5 +1,0 @@
-Fields,Tickets,String ns/ticket,StringBuilder ns/ticket,StringBuffer ns/ticket
-6,1,5201907,52374,18666
-50,10000,10496,2446,2070
-500,1000,188515,22422,29444
-Use StringBuilder for a ticket and a thread-safe logger for shared logs.
