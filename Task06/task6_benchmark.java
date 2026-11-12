@@ -11,7 +11,7 @@ class WaitingPatient {
     }
 }
 
-public class TriageScalingBenchmark {
+public class task6_benchmark {
     public static void main(String[] args) {
         int[] sizes = {1000, 10000, 50000};
         System.out.println("Patients,Add ns per patient,Poll ns per patient");

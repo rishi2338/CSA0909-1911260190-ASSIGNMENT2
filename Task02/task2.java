@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class ListStructureBenchmark {
+public class task2 {
     static long total;
 
     public static void main(String[] args) {

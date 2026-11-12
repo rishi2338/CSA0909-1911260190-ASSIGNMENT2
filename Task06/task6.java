@@ -17,7 +17,7 @@ class Patient {
     }
 }
 
-public class Triage {
+public class task6 {
     long counter = 0;
 
     PriorityQueue<Patient> queue = new PriorityQueue<Patient>(new Comparator<Patient>() {

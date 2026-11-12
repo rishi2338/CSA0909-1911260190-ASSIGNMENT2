@@ -17,7 +17,7 @@ class OldStudent {
     // hashCode() is intentionally missing for this experiment.
 }
 
-public class BrokenAttendance {
+public class task3_broken {
     public static void main(String[] args) {
         Set<OldStudent> scans = new HashSet<OldStudent>();
         scans.add(new OldStudent("192311001"));

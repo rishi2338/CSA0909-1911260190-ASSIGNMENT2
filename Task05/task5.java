@@ -38,7 +38,7 @@ class Leaderboard<T> {
     }
 }
 
-public class LeaderboardDemo {
+public class task5 {
     public static void main(String[] args) {
         Comparator<Team> byRank = new Comparator<Team>() {
             public int compare(Team first, Team second) {

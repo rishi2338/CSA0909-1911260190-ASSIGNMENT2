@@ -3,7 +3,7 @@ import java.util.TreeMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class PharmacyInventory {
+public class task4 {
     static int total;
 
     public static void main(String[] args) {

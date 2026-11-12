@@ -1,4 +1,4 @@
-public class RedesignValidation {
+public class task7 {
 
     public static String oldMethod(int fields) {
         String ticket = "";

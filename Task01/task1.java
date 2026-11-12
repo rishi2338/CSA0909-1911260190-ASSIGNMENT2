@@ -1,4 +1,4 @@
-public class StringConstructionBenchmark {
+public class task1 {
 
     public static long testString(int fields, int tickets) {
         long start = System.nanoTime();

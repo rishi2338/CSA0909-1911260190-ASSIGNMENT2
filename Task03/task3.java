@@ -31,7 +31,7 @@ class Student {
     }
 }
 
-public class Attendance {
+public class task3 {
     public static void main(String[] args) {
         Set<Student> present = new HashSet<Student>();
 
