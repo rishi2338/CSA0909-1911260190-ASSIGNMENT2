@@ -1,0 +1,6 @@
+Fields,Original ns/ticket,StringBuilder ns/ticket
+10,28196,3495
+50,20109,3040
+100,62787,8430
+500,573049,21110
+The redesigned version uses StringBuilder to reduce repeated String creation.
