@@ -1,0 +1,6 @@
+size,hash_lookup_ns,tree_lookup_ns,linked_lookup_ns
+100,84,82,18
+1000,149,87,26
+10000,31,115,28
+Code order (TreeMap): {MED101=12, MED102=25, MED103=40, MED104=8}
+Insertion order (LinkedHashMap): {MED103=40, MED101=12, MED104=8, MED102=25}
