@@ -1,0 +1,4 @@
+import java.util.*;
+class Patient{final String name;final int severity;final long arrival;Patient(String n,int s,long a){name=n;severity=s;arrival=a;}public String toString(){return name+"(S"+severity+")";}}
+public class Triage{long counter=0;final PriorityQueue<Patient>q=new PriorityQueue<>(Comparator.comparingInt((Patient p)->p.severity).thenComparingLong(p->p.arrival));void admit(String n,int s){if(s<1||s>5)throw new IllegalArgumentException();q.add(new Patient(n,s,counter++));}Patient next(){return q.poll();}
+ public static void main(String[]z){Triage t=new Triage();t.admit("Ravi",3);t.admit("Meena",1);t.admit("John",3);t.admit("Asha",5);t.admit("Kumar",1);t.admit("Lata",2);StringBuilder b=new StringBuilder();Patient p;while((p=t.next())!=null)b.append(p).append(' ');System.out.println(b.toString().trim());}}
