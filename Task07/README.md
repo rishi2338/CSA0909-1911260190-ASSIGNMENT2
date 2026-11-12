@@ -4,7 +4,7 @@
 Use Q1 evidence to find a performance limitation and test a redesigned solution.
 
 ## Java file
-RedesignValidation.java
+task7.java
 
 ## Diagnosis
 Repeated + joins create new String objects and can copy the existing text again.
@@ -17,7 +17,7 @@ As the number of fields increases, StringBuilder should usually need less time a
 
 ## Compile and run
 ~~~bash
-javac RedesignValidation.java
+javac task7.java
 java RedesignValidation
 ~~~
 
