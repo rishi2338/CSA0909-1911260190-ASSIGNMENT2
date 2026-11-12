@@ -1,4 +1,0 @@
-import java.util.*;
-class Team{final String name;final int points,goalDiff;Team(String n,int p,int g){name=n;points=p;goalDiff=g;}public String toString(){return name+"("+points+","+goalDiff+")";}}
-class Leaderboard<T>{final List<T>items=new ArrayList<>();final Comparator<? super T>order;Leaderboard(Comparator<? super T>c){order=c;}void add(T x){items.add(x);}List<T>ranking(){List<T>c=new ArrayList<>(items);c.sort(order);return c;}}
-public class LeaderboardDemo{public static void main(String[]z){Comparator<Team>c=Comparator.comparingInt((Team t)->t.points).reversed().thenComparing(Comparator.comparingInt((Team t)->t.goalDiff).reversed()).thenComparing(t->t.name);Leaderboard<Team>b=new Leaderboard<>(c);b.add(new Team("Panthers",9,4));b.add(new Team("Eagles",9,6));b.add(new Team("Cobras",6,1));b.add(new Team("Bisons",9,4));System.out.println(b.ranking());}}
